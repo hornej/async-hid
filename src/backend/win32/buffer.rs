@@ -371,3 +371,7 @@ mod tests {
         assert!(!pending);
     }
 }
+
+#[cfg(test)]
+#[path = "io_tests.rs"]
+mod io_tests;

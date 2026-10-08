@@ -67,3 +67,6 @@ simple_logger = "5"
 futures-lite = "2.5.0"
 pollster = { version = "0.4.0", features = ["macro"] }
 async-io = "2.4.0"
+
+[target.'cfg(target_os = "windows")'.dev-dependencies]
+windows = { version = "0.61.1", features = ["Win32_System_Pipes"] }
